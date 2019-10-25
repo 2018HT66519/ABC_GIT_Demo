@@ -1,0 +1,19 @@
+from sklearn import datasets
+'''import data sets from the sklearn'''
+from sklearn.model_selection import train_test_split
+'''data set is broadly split into training and test'''
+d = datasets.load_diabetes()
+'''loading diabetes dataset and saving in d'''
+D = d.data
+y = d.target
+'''d.data are the examples and saved in D where as d.target are the
+classes saved in Y'''
+
+print D[:2]
+'''printing first 2 row / examples of the dataset
+
+X_train,X_test,y_train,y_test=train_test_split(D,y,test_size=0.2)
+print len(y)
+print len(y_train)
+print len(y_test)
+'''
