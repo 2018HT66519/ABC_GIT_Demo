@@ -1,4 +1,5 @@
 from sklearn.feature_extraction.text import CountVecotrizer
+from sklearn import distance
 
 Words = ['algorithm data mining graphics data science', 
 'concrete bond cement mining',
