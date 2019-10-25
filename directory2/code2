@@ -1,0 +1,19 @@
+from scipy.spatial import distance
+''' importing distance function from spatial'''
+A = [1,2,0,3,4]
+B = [2,3,4,0,2]
+'''Defining 2 vectors to calculate various distances'''
+print distance.cityblock(A, B)
+''' calculating manhattan or cityblock distance'''
+print distance.euclidean(A, B)
+''' calculating euclidean distance'''
+C = [1,1,0,1,1]
+D = [1,1,1,0,1]
+'''Defining 2 vectors for calculating jacard distance'''
+
+print distance.jaccard(C, D)
+'''calculating jaccard distance'''
+
+print 1-distance.jaccard(C, D)
+'''calculatingjaccard similarity i.e. 1- jaccard distance'''
+
