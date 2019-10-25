@@ -12,8 +12,10 @@ classes saved in Y'''
 print D[:2]
 '''printing first 2 row / examples of the dataset
 
-X_train,X_test,y_train,y_test=train_test_split(D,y,test_size=0.2)
+X_train,X_test,y_train,y_test=train_test_split(D,y,test_size=0.5)
 print len(y)
 print len(y_train)
 print len(y_test)
 '''
+'''adding comment to check the difference'''
+
