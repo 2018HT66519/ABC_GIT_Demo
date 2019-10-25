@@ -1,0 +1,21 @@
+from sklearn.feature_extraction.text import CountVecotrizer
+
+Words = ['algorithm data mining graphics data science', 
+'concrete bond cement mining',
+'anatomy data genome']
+
+Courses = ['comp', 'civil', 'bio']
+
+vec = CountVectorizer()
+X = vec.fit_transform(Words)
+''' this is sparse'''
+print type(X) 
+
+print X
+
+''' to print in array i.e. TDM'''
+
+print X.toarray()
+
+''' prints the word at 6th place in TDM i.e. data'''
+print vec.get_feature_names()[5]
